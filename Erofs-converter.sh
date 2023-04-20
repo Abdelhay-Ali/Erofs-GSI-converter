@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#source from https://github.com/Iceows/huawei-creator/tree/android-13
 #Usage:
 #sudo bash Erofs-converter.sh [/path/to/system.img] 
 
