@@ -27,10 +27,10 @@ mount -o loop,rw s-ab-raw.img d
 		
 		
 	# Remove non use apex vndk
-	rm -rf "system_ext/apex/com.android.vndk.v29"
-	rm -rf "system_ext/apex/com.android.vndk.v30"
-	rm -rf "system_ext/apex/com.android.vndk.v31"
-	rm -rf "system_ext/apex/com.android.vndk.v32"
+	#rm -rf "system_ext/apex/com.android.vndk.v29"
+	#rm -rf "system_ext/apex/com.android.vndk.v30"
+	#rm -rf "system_ext/apex/com.android.vndk.v31"
+	#rm -rf "system_ext/apex/com.android.vndk.v32"
 	
 
         # Remove Superuser 
