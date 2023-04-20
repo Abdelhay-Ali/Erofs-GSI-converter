@@ -51,5 +51,7 @@ mount -o loop,rw s-ab-raw.img d
 )
 
 sleep 1
+rm -Rf s-erofs.img
+
 mkfs.erofs -E legacy-compress -zlz4hc -d2 s-erofs.img d/
 umount d
