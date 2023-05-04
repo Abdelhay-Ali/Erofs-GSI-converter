@@ -56,10 +56,13 @@ wget --no-check-certificate https://github.com/ponces/treble_build_evo/releases/
 
 msg "Extract GSI..."
 tar -xvf evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
+git config --global --add safe.directory /github/workspace
+
+sleep 5
+
 ls
 pwd
 msg "Convert GSI..."
-cd  evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img
 rm -Rf tmp
 mkdir -p d tmp
 e2fsck -y -f evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img
