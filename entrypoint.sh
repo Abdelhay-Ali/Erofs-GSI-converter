@@ -40,7 +40,7 @@ apt update && apt upgrade -y
 
 msg "Installing essential packages..."
 apt install -y --no-install-recommends git make bc bison openssl \
-    curl zip wget erofs-utils
+    curl zip wget erofs-utils xz-utils
     
 set_output hash "$(cd "$kernel_path" && git rev-parse HEAD || exit 127)"
 git config --global --add safe.directory /github/workspace
