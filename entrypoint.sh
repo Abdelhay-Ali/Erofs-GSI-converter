@@ -51,7 +51,11 @@ git config --global --add safe.directory /github/workspace
 #curl --remote-name https://github.com/ponces/treble_build_evo/releases/download/v2023.05.04/evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
 
 msg "Download GSI..."
+        wget -c https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/aarch64-elf/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-elf.tar.xz --no-check-certificate
+        #wget -c https://releases.linaro.org/components/toolchain/binaries/4.9-2017.01/aarch64-elf/gcc-linaro-4.9.4-2017.01-x86_64_aarch64-elf.tar.xz --no-check-certificate
 
+        
+        tar -xvf gcc-linaro-7.5.0-2019.12-x86_64_aarch64-elf.tar.xz
 wget --no-check-certificate https://github.com/ponces/treble_build_evo/releases/download/v2023.05.04/evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
 
 msg "Extract GSI..."
