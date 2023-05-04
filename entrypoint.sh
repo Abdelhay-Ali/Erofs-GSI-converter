@@ -44,7 +44,16 @@ apt install -y --no-install-recommends git make bc bison openssl \
     
 set_output hash "$(cd "$kernel_path" && git rev-parse HEAD || exit 127)"
 git config --global --add safe.directory /github/workspace
-curl --remote-name https://github.com/ponces/treble_build_evo/releases/download/v2023.05.04/evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
+
+#sudo rm -f /etc/ssl/certs/ca-bundle.crt
+#sudo apt reinstall ca-certificates
+#sudo update-ca-certificates
+
+wget -c https://github.com/ponces/treble_build_evo/releases/download/v2023.05.04/evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
+
+#curl --remote-name https://github.com/ponces/treble_build_evo/releases/download/v2023.05.04/evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
+
+
 
 set_output outfile evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
 
