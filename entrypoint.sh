@@ -55,7 +55,7 @@ msg "Download GSI..."
 wget --no-check-certificate https://github.com/ponces/treble_build_evo/releases/download/v2023.05.04/evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
 
 msg "Extract GSI..."
-tar -xvf evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
+tar -xf evolution_arm64-ab-vndklite-7.9-unofficial-20230503.img.xz
 git config --global --add safe.directory /github/workspace
 
 sleep 5
